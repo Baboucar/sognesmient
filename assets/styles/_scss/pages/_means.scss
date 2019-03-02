@@ -1,0 +1,26 @@
+.means__title{
+    text-align: center;
+    color: $color-primary;
+}
+
+.mean{
+    padding-top: 1rem;
+}
+.mean img{
+    display: block;
+    margin: 0 auto;
+}
+@include respond-to(tablet-large) {
+  .means__title{
+      font-size: 2rem;
+  }
+
+  .means{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  .mean{
+      padding-top: 1rem;
+  }
+
+}

@@ -1,0 +1,73 @@
+.aboutus{
+    background: $color-secondary;
+    letter-spacing: .01rem;
+    &__description{
+        color:$color-tertiary;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}
+
+.about__title{
+    color:$color-white;
+    font-size: 2rem;
+     margin-top: 0;
+    padding-top: 2rem;
+  
+
+}
+
+.about__details{
+    color: $color-white;
+     padding-bottom: 2rem;
+
+}
+.statistics{
+  color: $color-secondary;
+    &__number {
+        font-size: 3rem;
+        font-weight: bold;
+        
+    }
+    &__details{
+        margin-top: .5rem;
+    }
+
+    &__description{
+
+    }
+}
+
+
+@include respond-to(tablet-large) {
+.aboutus{
+    display: flex;
+    padding-top: 5rem;
+    justify-content: space-evenly;
+}
+
+.about__details{
+   
+    width: 40%;
+    margin-left: 0;
+}
+.about{
+  
+    width: 30%;
+    &__title{
+        padding-top: 0;
+    }
+}
+.statistics{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 70%;
+
+     &__number{
+         font-size: 5rem;
+     }
+
+}
+
+}

@@ -1,0 +1,55 @@
+---
+layout: default
+---
+{% include nav.html%}
+
+<main>
+    <section class="slider">
+        <img src="./assets/images/1.jpeg" alt="">
+        
+    </section>
+
+    <section class="contact"> <!--begin contact-->
+<span class="contact__number">Contacter nous au 037 56 13 08</span>
+    </section>  <!--end contact-->
+
+    <section class="whyus">   <!--begin why us-->
+<span class="whyus__title">Pourquoi nous choisir?</span>
+   
+<div class="whyus__reasons">
+       <p class="whyus__description">
+Nettoyeurs <br> professionnels <br> certifiés
+       </p>
+       <p class="whyus__description">
+Nettoyage <br> écologique
+       </p>
+
+<p class="whyus__description">
+Soirées et fins
+ <br> 
+de semaine disponibles
+       </p>
+
+       <p class="whyus__description">
+Satisfaction
+ <br>
+ 100% garantie
+       </p>
+    </div>
+    </section>  <!--end why us-->
+
+    {%include services.html %}
+
+    <section class=" slider second--slider">
+        <img src="./assets/images/slider1.webp" alt="" srcset="">
+
+    </section>
+
+    <section class="contact__home">
+<h3 class="contact__title center-text container">Pour toute demande de renseignements ou suggestions sur notre <br> site, n'hésitez pas à nous
+    contacter, nous vous répondrons dans les <br> plus brefs délais.</h3>
+      {%include contact.html %}
+    </section>
+</main>
+
+{% include footer.html %}
