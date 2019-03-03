@@ -11,3 +11,15 @@ function closenav() {
     document.querySelector(".header__close-btn").style.display = "none";
     document.querySelector(".menu-button").style.display = "block";
 }
+
+$(document).ready(function () {
+    $('.bxslider').bxSlider({
+        auto: true,
+        preloadImages: 'all',
+        mode: 'fade',
+        captions: true,
+        hideControlOnEnd:true,
+        responsive: true,
+        adaptiveHeight: true
+    });
+});

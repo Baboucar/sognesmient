@@ -3,6 +3,9 @@
         width: 100%;
     }
 }
+.logo{
+    width: 200px;
+}
 
 .contact {
     margin: 2rem auto;
@@ -11,8 +14,6 @@
     &__number {
         color: $color-primary;
         letter-spacing: 0.08em;
-
-
     }
 }
 
@@ -25,44 +26,38 @@
 
     &__title {
         font-weight: 500;
-
     }
 
     &__description {
-
         font-weight: bold;
         border-top: 2px solid $color-primary;
         width: 50%;
         margin: 1rem auto;
         padding: 1rem 0;
-
     }
 }
-
 
 .service__description {
     position: relative;
     padding-top: 2rem;
     color: $color-white;
     left: 2rem;
-
 }
 
 .service__image {
     display: block;
     margin: 0 auto;
     position: absolute;
-    padding-top: 1rem;
-    width: 90%;
+    
 
+    // width: 90%;
 }
 
 .services {
-    width: 90%;
+    // width: 90%;
     margin: 0 auto;
 
     &__title {
-
         text-align: center;
         color: $color-primary;
     }
@@ -76,7 +71,6 @@
     font-size: 1.3rem;
     color: $color-primary;
     margin-bottom: 2rem;
-   
 }
 
 input {
@@ -108,37 +102,47 @@ textarea {
     border-bottom-color: $color-primary;
 }
 
-input {}
+.slide {
+    margin-top: 3rem;
+
+    &__image {
+        width: 100%;
+    }
+}
 
 .form {
     margin-top: 2rem;
 }
 
-.footer{
+.footer {
     background: $color-primary;
     color: $color-white;
 }
 
-.spacer{
-        padding-top: 1rem;
+.spacer {
+    padding-top: 1rem;
 }
-.ourenterprise__title{
 
+.ourenterprise__title {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-  .background {
-      background: $color-primary;
-  }
+.background {
+    background: $color-primary;
+}
+
 @include respond-to(tablet-large) {
     .contact__number {
         font-size: 2.5rem;
     }
 
+    .logo{
+        width: 300px;
+    }
+
     .whyus__reasons {
         display: flex;
-
     }
 
     .whyus__title {
@@ -168,37 +172,35 @@ input {}
         margin: 0 auto;
     }
 
-    .flex__contact{
+    .flex__contact {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
- 
-    .form{
+
+    .form {
         width: 40%;
     }
-    .footer{
+
+    .footer {
         display: flex;
         justify-content: space-around;
         margin-top: 3rem;
         font-size: .9rem;
-       
-
     }
-    .ourenterprise{
+
+    .ourenterprise {
         flex-basis: 30%;
         text-align: left;
     }
-   .address{
-       flex-basis: 20%;
-       text-align: left;
-      
-     
-   }
-   .office__hours{
-       flex-basis: 25%;
-       text-align: left;
-   }
- 
 
+    .address {
+        flex-basis: 20%;
+        text-align: left;
+    }
+
+    .office__hours {
+        flex-basis: 25%;
+        text-align: left;
+    }
 }

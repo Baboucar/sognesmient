@@ -14,7 +14,7 @@
 <header class="header"> <!--begin header-->
 
 <div class="container header__items">
-<a href="/" class="header__logo">SOGESMINET</a>
+<a href="/" class="header__logo"><img class="logo" src="../assets/images/logo.jpeg" alt=""></a>
 <span class="menu-button" onclick="opennav()">&#9776</span>
 <span  onclick="closenav()" class="header__close-btn">&times;</span>
 </div>
@@ -29,7 +29,11 @@
 <a href="index.html#contact">Contact</a>
 </nav> <!--end nav-->
 </div>
-
+<style>
+.bx-next,.bx-prev, .bx-pager-item{
+    display: none;
+}
+</style>
 <main>
     <section class="slider">
         <img src="./assets/images/1.jpeg" alt="">
@@ -112,10 +116,17 @@ Nettoyage <br> de tapis
 </div>
 </section>
 
-    <section class=" slider second--slider">
-        <img src="./assets/images/slider1.webp" alt="" srcset="">
+  
+    
+<div class="bxslider slide">
+<div ><img class="slide__image" src="/assets/images/slide3.jpeg"></div>
+    <div><img class="slide__image" src="/assets/images/slide1.jpeg" ></div>
+    <div><img class="slide__image" src="/assets/images/slide2.jpeg" ></div>
+<div><img class="slide__image" src="/assets/images/slide4.jpeg"></div>
+<div><img class="slide__image" src="/assets/images/slide5.jpeg"></div>
+</div>
 
-    </section>
+ 
 
     <section class="contact__home spacer">
 <h3 class="contact__title center-text container">Pour toute demande de renseignements ou suggestions sur notre <br> site, n'hésitez pas à nous
@@ -127,7 +138,7 @@ Nettoyage <br> de tapis
     </div>
 
     <div class="form container">
-        <form action="">
+<form action="https://formspree.io/sogesminet@gmail.com" method="POST">
          <div>
              
              <input class="input" placeholder="Nom" type="text" name="" id="name">
@@ -146,6 +157,7 @@ Nettoyage <br> de tapis
           <div>
               <input type="submit" value="Somettre">
           </div>
+<!-- <input type="hidden" name="_next" value="https://festive-boyd-429fc0.netlify.com/thanks.html" /> -->
         </form>
     </div>
 </div>
@@ -184,6 +196,9 @@ Tél:+212 37561039/561308 <br> –Fax:+212 37561039
   </div>
 </footer>
 </div>
-    <script src="../assets/scripts/main.js" ></script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="../assets/scripts/main.js"></script>
 </body>
 </html>
