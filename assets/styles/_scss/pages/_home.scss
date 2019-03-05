@@ -45,6 +45,11 @@
     }
 }
 
+map{
+    &__item{
+        width: 100%;
+    }
+}
 .whyus {
     background: $color-tertiary;
     font-weight: bolder;
@@ -165,6 +170,10 @@ textarea {
         font-size: 2.5rem;
     }
 
+    iframe{
+        width: 400px;
+        height: 400px;
+    }
     .logo{
         width: 80px;
         height: 35px;
