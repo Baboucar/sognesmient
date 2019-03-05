@@ -1,6 +1,41 @@
+
+.means__description{
+
+text-align: center;
+
+background-image: url(/assets/images/means.jpeg);
+height: 600px;
+background-repeat: no-repeat;
+background-size: cover;
+display: block;
+margin-top: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+font-weight: bold;
+text-decoration: underline;
+text-transform: uppercase;
+color:$color-primary;
+
+  
+   
+  
+}
+
+ .means__image {
+     width: 100%;
+     height: 100%;
+     
+
+
+    //  opacity: .5;
+ }
 .means__title{
     text-align: center;
     color: $color-primary;
+    margin-top: 4rem;
+   
 }
 
 .mean{
@@ -11,13 +46,22 @@
     margin: 0 auto;
 }
 @include respond-to(tablet-large) {
-  .means__title{
-      font-size: 2rem;
+    
+  
+  .means__title,
+  .means__description {
+      font-size: 2.5rem;
+     
+      
   }
 
   .means{
+      &__image{
+               
+      }
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+
   }
   .mean{
       padding-top: 1rem;
