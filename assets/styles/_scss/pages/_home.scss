@@ -7,6 +7,9 @@
     width: 50px;
 }
 
+.alternate__color{
+    color: red;
+}
 .second__description{
     color: $color-secondary;
     font-size: 1.4rem;
@@ -75,7 +78,13 @@ map{
     padding-top: 2rem;
     color: $color-white;
     left: 2rem;
+
+    // &::nth-child(even){
+    //   color: $color-secondary;
+    // }
+
 }
+
 
 .service__image {
     display: block;
@@ -256,6 +265,8 @@ textarea {
         display: block;
         position: absolute;
         right: 0;
+        width: 600px;
+        height: 650px;
         top: 6rem;
     }
     .second__description{
