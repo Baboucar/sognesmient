@@ -165,6 +165,9 @@ textarea {
     background: $color-primary;
 }
 
+.transparent__image{
+    display: none;
+}
 @include respond-to(tablet-large) {
     .contact__number {
         font-size: 2.5rem;
@@ -245,5 +248,12 @@ textarea {
     .office__hours {
         flex-basis: 25%;
         text-align: left;
+    }
+
+    .transparent__image{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 6rem;
     }
 }
