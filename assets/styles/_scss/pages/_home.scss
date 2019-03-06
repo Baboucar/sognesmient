@@ -184,7 +184,9 @@ textarea {
 
       .home__description {
           font-size: 2.5rem;
-          padding-top: 2.5rem;
+          height: 50%;
+  
+          
 
       }
     .whyus__reasons {
@@ -255,5 +257,8 @@ textarea {
         position: absolute;
         right: 0;
         top: 6rem;
+    }
+    .second__description{
+        margin-top: 8rem;
     }
 }
